@@ -1,0 +1,22 @@
+@{
+    Layout = "layout";
+}
+
+<h1>Employees</h1>
+
+<table>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+    @foreach (var person in Model.Persons)
+    {
+        <tr>
+            <td>@person.Id</td>
+            <td>@person.Name</td>
+            <td>@person.Age</td>
+        </tr>
+    }
+    
+  </table> 
